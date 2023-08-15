@@ -29,13 +29,12 @@ const ProductList = () => {
       })
       .catch((err) => {
         setError(err);
-        console.log(err);
       })
       .finally(() => {
         setIsLoading(false);
       });
   };
-  // console.log(data, "---data");
+
   useEffect(() => {
     fetchData();
   }, []);
